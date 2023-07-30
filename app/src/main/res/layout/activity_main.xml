@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#CFCACA"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="200"
+            android:background="#CFCACA" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_weight="0.003"
+        android:orientation="horizontal">
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:layout_weight="200"
+          android:background="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:text="Player 1"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_margin="3dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:text="SCORE"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:text="Player 2"
+                android:textSize="20dp"
+                android:gravity="center|end"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/Player1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#f6b898"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_weight="1"
+                android:text="X"
+                android:gravity="center|bottom"
+                android:textColor="#05125C"
+                android:textSize="25sp"
+                android:layout_margin="2dp"
+                />
+            <TextView
+                android:id="@+id/Player1Score"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#f6b898"
+                android:backgroundTint="@color/cardview_light_background"
+                android:textColor="#05125C"
+                android:textSize="15dp"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                />
+            <TextView
+                android:id="@+id/Player2Score"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#f6b898"
+                android:textSize="15dp"
+                android:backgroundTint="@color/cardview_light_background"
+                android:textColor="#05125C"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                />
+            <TextView
+                android:id="@+id/Player2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|bottom"
+                android:background="#f6b898"
+                android:backgroundTint="@color/cardview_light_background"
+                android:textColor="#05125C"
+                android:text="O"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_weight="0.001"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="200"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_margin="3dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+
+                <Button
+                    android:id="@+id/Pos0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+                <Button
+                    android:id="@+id/Pos1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+                <Button
+                    android:id="@+id/Pos2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+         <!--   <Button
+                android:id="@+id/Pos1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/designlayout"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginRight="2dp"
+                android:padding="5dp"
+                />
+            <Button
+                android:id="@+id/Pos2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/designlayout"
+                android:layout_weight="1"
+                android:padding="5dp"
+                />-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_margin="3dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+
+                <Button
+                    android:id="@+id/Pos3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+                <Button
+                    android:id="@+id/Pos4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+                <Button
+                    android:id="@+id/Pos5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_margin="3dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+
+                <Button
+                    android:id="@+id/Pos6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+                <Button
+                    android:id="@+id/Pos7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/CardView.Light"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#f6b898"
+                app:cardMaxElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                >
+                <Button
+                    android:id="@+id/Pos8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textColor="#A817C1"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:background="@drawable/designlayout"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+       <!-- <Button
+            android:id="@+id/Pos0"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/Pos1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/Pos2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_weight="0.001"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="200"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/designlayout"
+            android:text="START"/>
+        <Button
+            android:id="@+id/Restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/designlayout"
+            android:text="RESTART"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_weight="0.001"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="200"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
